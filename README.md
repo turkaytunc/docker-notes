@@ -15,6 +15,7 @@ docker inspect
 ## example
 
 ```bash
+
 # -e -> environment variable, -d -> detach mode
 docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 -d mysql
 
