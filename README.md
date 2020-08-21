@@ -24,5 +24,11 @@ docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 -d mysql
 ## container logs
 
 ```bash
-docker logs <container_id>
+docker logs <container-id>
+```
+
+## access container and execute commands in it
+
+```bash
+docker exec -it <container-id>
 ```
