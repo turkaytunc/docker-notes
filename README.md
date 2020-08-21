@@ -21,6 +21,14 @@ docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=db_pass123 -d mysql
 
 ```
 
+## example 2
+
+```bash
+
+docker run -p 27017:27017 -d -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo
+
+```
+
 ## container logs
 
 ```bash
