@@ -40,3 +40,11 @@ docker logs <container-id>
 ```bash
 docker exec -it <container-id>
 ```
+
+## creating network
+
+```bash
+
+docker network <network-name>
+
+```
