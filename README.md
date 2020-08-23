@@ -45,6 +45,14 @@ docker create network wp-mysql-network --driver bridge --subnet 182.18.0.1/24 --
 
 ```
 
+## example 5
+
+```bash
+
+
+
+```
+
 ## container logs
 
 ```bash
