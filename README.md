@@ -37,6 +37,14 @@ docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG
 
 ```
 
+## example 4
+
+```bash
+#creating network
+docker create network wp-mysql-network --driver bridge --subnet 182.18.0.1/24 --gateway 182.18.0.1
+
+```
+
 ## container logs
 
 ```bash
