@@ -53,6 +53,20 @@ docke run -d -p 4000:4000 --env-file ./.env --name api-app api-image
 
 ```
 
+## react-application dockerfile example
+
+```bash
+FROM mhart/alpine-node:latest as react-build
+WORKDIR /usr/app/react
+COPY ["package.json", "./"]
+RUN npm install
+COPY . .
+RUN npm run build
+
+FROM nginx
+COPY --from=react-build /usr/app/react/build /usr/share/nginx/html
+```
+
 ## container logs
 
 ```bash
