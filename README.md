@@ -49,7 +49,7 @@ docker create network wp-mysql-network --driver bridge --subnet 182.18.0.1/24 --
 
 ```bash
 
-
+docke run -d -p 4000:4000 --env-file ./.env --name api-app api-image
 
 ```
 
